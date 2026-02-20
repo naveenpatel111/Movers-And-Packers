@@ -1,8 +1,4 @@
-import Stripe from "stripe";
-
-
-const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
-
+import stripe from "stripe";
 
 async function Gateway(req,res) {
   try {

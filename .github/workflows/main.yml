@@ -19,6 +19,6 @@ jobs:
 
       - name: Install Dependencies
         run: npm install
-
-      - name: Build Docker Image
-        run: docker build -t myapp .
+        
+       - name: Build Docker Image
+        run: docker build -t myapp -f docker/Dockerfile .
